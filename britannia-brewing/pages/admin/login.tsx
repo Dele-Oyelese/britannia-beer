@@ -2,11 +2,11 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
-import { Button } from '../../components/ui/button'
-import { Card, CardContent, CardHeader } from '../../components/ui/card'
-import { Input } from '../../components/ui/input'
-import { auth } from '../../lib/auth'
-import { useAuth } from '../../utils/auth-helpers'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { auth } from '@/lib/auth'
+import { useAuth } from '@/utils/auth-helpers'
 
 export default function AdminLoginPage() {
   const [email, setEmail] = useState('')

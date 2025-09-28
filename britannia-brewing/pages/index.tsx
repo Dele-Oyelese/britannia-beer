@@ -2,12 +2,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { BeerGrid } from '../components/beer/beer-grid'
-import { Footer } from '../components/layout/footer'
-import { Header } from '../components/layout/header'
-import { Button } from '../components/ui/button'
-import { BeerWithSizes } from '../lib/database.types'
-import { beerService } from '../lib/supabase'
+import { BeerGrid } from '@/components/beer/beer-grid'
+import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+import { Button } from '@/components/ui/button'
+import { BeerWithSizes } from '@/lib/database.types'
+import { beerService } from '@/lib/supabase'
 
 export default function HomePage() {
   const [featuredBeers, setFeaturedBeers] = useState<BeerWithSizes[]>([])
@@ -71,7 +71,7 @@ export default function HomePage() {
               <h2 className="text-3xl font-bold text-britannia-navy mb-4">
                 Featured Beers
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 A selection of our current favorites, crafted with passion and available now.
               </p>
             </div>
@@ -101,7 +101,7 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-britannia-navy mb-2">Multiple Locations</h3>
-                <p className="text-gray-600">Visit our taprooms in Ladner, Steveston, and Lake Country</p>
+                <p className="text-base text-gray-600">Visit our taprooms in Ladner, Steveston, and Lake Country</p>
               </div>
 
               <div className="text-center">
@@ -111,7 +111,7 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-britannia-navy mb-2">Real-Time Updates</h3>
-                <p className="text-gray-600">Live inventory tracking shows exactly what's available now</p>
+                <p className="text-base text-gray-600">Live inventory tracking shows exactly what's available now</p>
               </div>
 
               <div className="text-center">
@@ -121,7 +121,7 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-britannia-navy mb-2">Quality Assured</h3>
-                <p className="text-gray-600">Every beer is crafted with the finest ingredients and attention to detail</p>
+                <p className="text-base text-gray-600">Every beer is crafted with the finest ingredients and attention to detail</p>
               </div>
             </div>
           </div>

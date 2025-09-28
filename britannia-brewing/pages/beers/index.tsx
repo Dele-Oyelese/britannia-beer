@@ -1,12 +1,12 @@
 // pages/beers/index.tsx
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
-import { BeerGrid } from '../../components/beer/beer-grid'
-import { Footer } from '../../components/layout/footer'
-import { Header } from '../../components/layout/header'
-import { Input } from '../../components/ui/input'
-import { BeerWithSizes } from '../../lib/database.types'
-import { beerService } from '../../lib/supabase'
+import { BeerGrid } from '@/components/beer/beer-grid'
+import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+import { Input } from '@/components/ui/input'
+import { BeerWithSizes } from '@/lib/database.types'
+import { beerService } from '@/lib/supabase'
 
 export default function BeersPage() {
   const [beers, setBeers] = useState<BeerWithSizes[]>([])
