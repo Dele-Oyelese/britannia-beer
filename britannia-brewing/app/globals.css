@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --britannia-navy: #1B365D;
+  --britannia-gold: #D4AF37;
+  --britannia-cream: #F5F5DC;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.britannia-gradient {
+  background: linear-gradient(135deg, var(--britannia-navy) 0%, #2C5282 100%);
+}
+
+.beer-card {
+  @apply bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200;
+}
+
+.beer-card:hover {
+  @apply transform -translate-y-1;
+}
+
+.admin-sidebar {
+  @apply bg-britannia-navy text-white min-h-screen;
+}
+
+.loading-spinner {
+  @apply animate-spin rounded-full border-4 border-gray-200 border-t-britannia-gold;
+}
